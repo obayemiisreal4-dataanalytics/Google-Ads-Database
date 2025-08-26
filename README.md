@@ -82,6 +82,7 @@ describe advertiser;
 select * from advertiser; ```
 
 ## campaign table
+```Sql
 INSERT INTO Campaign (CampaignID, advitiserid, CampaignName, StartDate, Budget)
 VALUES
 (1, 1, 'Unwrap Holiday Joy', '2023-03-21', 800000),
@@ -98,9 +99,10 @@ VALUES
 (12, 12, 'Your Active Lifestyle, Elevated', '2025-02-12', 750000),
 (13, 13, 'Luxury Redefined', '2025-03-21', 1200000);
 
-describe campaign; 
+describe campaign; ```
 
 ## Ad table
+
 INSERT INTO Ad (AdID, campaignid, AdTitle, TargetURL, Impressions)
 VALUES
 (1, 1, 'Unwrap Holiday Joy: Your Festive Shopping Guide', 'https://www.simtechcreative.com/holiday-gifts', 10000),
@@ -119,6 +121,7 @@ VALUES
 select * from ad; 
 
 ## Keyword table
+
 INSERT INTO Keyword (KeywordID, ADid, KeywordText, BidAmount, QualityScore)
 VALUES
 (1, 1, 'holiday gifts', 30.00, 8.5),
