@@ -50,10 +50,10 @@ Clicks **SMALLINT** <br>
 Conversations **SMALLINT** <br>
 
 ## The cardinality requirement for the Database
-Advertiser - Campaign: One advertiser can manage multiple campaigns, but each campaign belongs to a single advertiser (one-to-many).
-Campaign – Ad: One campaign can contain multiple ads, but each ad is linked to one campaign (one-to-many).
-Ad - Keyword: An ad can target multiple keywords, but each keyword is associated with one ad (one-to-many).
-Ad - Performance: One ad can generate multiple performance records over time, but each performance record belongs to a specific ad (one-to-many). 
+Advertiser - Campaign: One advertiser can manage multiple campaigns, but each campaign belongs to a single advertiser (one-to-many) <br>.
+Campaign – Ad: One campaign can contain multiple ads, but each ad is linked to one campaign (one-to-many) <br>.
+Ad - Keyword: An ad can target multiple keywords, but each keyword is associated with one ad (one-to-many) <br>.
+Ad - Performance: One ad can generate multiple performance records over time, but each performance record belongs to a specific ad (one-to-many) <br>. 
 
 ## Entity Relationship Diagram 
 The Entity Relationship Diagram shows the collection of objects within a database and the relationship between them. It includes the entities, Schemas, Participation constraints and the relationship between the entities, I modeled this using the ERD tools by defining the table and specifying the relationships between the tabbles using pre-existing columns as foreign keys.
