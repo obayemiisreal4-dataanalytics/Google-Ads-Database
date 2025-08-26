@@ -58,7 +58,7 @@ Ad - Performance: One ad can generate multiple performance records over time, bu
 ## Entity Relationship Diagram 
 The Entity Relationship Diagram shows the collection of objects within a database and the relationship between them. It includes the entities, Schemas, Participation constraints and the relationship between the entities, I modeled this using the ERD tools by defining the table and specifying the relationships between the tabbles using pre-existing columns as foreign keys.
 
-![
+
 
 
 
