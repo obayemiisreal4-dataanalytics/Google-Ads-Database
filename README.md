@@ -28,7 +28,25 @@ StartDate *DATE*<br>
 ## Advertisement
 This is the table that stores information from the advertisement. The attributes and data types are as follows:<br>
 AdID *INT*<br>
-CampaignID *INT*
+CampaignID 8*INT*<br>
 AdTitle *VARCHAR*<br>
 TargetURL *VARCHAR*<br>
 Impression *SMALLINT*<br>
+
+## keyword
+This is the table that stores information from the keyword. The attributes and data types are as follows:<br>
+keywordid **INT**<br>
+adid **INT** <br>
+keywordtext **TEXT** <br>
+Bidamount **SNALLINT** <br>
+QualityScore **SMALLINT** <br>
+
+## Performance
+This is the table that stores information from the Performance. The attributes and data types are as follows:<br>
+Performanceid **INT** <br>
+Adid **INT** <br>
+Date **DATE** <br>
+Clicks **SMALLINT** <br>
+Conversations **SMALLINT** <br>
+P
+
