@@ -80,7 +80,7 @@ VALUES
 (13, 'Ellae Creative', 'Esther Ogunleye', 'estherogunleye@gmail.com', '+234 (0)70 4735 0004');
 
 describe advertiser;
-select * from advertiser; ```
+select * from advertiser;
 
 ## campaign table
 ``` Sql
@@ -100,7 +100,7 @@ VALUES
 (12, 12, 'Your Active Lifestyle, Elevated', '2025-02-12', 750000),
 (13, 13, 'Luxury Redefined', '2025-03-21', 1200000);
 
-describe campaign; ```
+describe campaign; 
 
 ## Ad table
 ``` Sql
@@ -119,7 +119,7 @@ VALUES
 (11, 11, 'Elevate Your Space: Home Decor Inspiration', 'https://www.gemscommunications.com/home-decor', 20000 ),
 (12, 12, 'Your Active Lifestyle, Elevated', 'https://www.wetherheads.com/active-lifestyle', 5000 ),
 (13, 13, 'Luxury Redefined: Indulge Yourself', 'https://www.adhubbing.com/luxury-goods', 10000);
-select * from ad; ```
+select * from ad; 
 
 ## Keyword table
 ``` Sql
@@ -138,7 +138,7 @@ VALUES
 (11, 11, 'beauty products', 25.00, 7.8),
 (12, 12, 'skincare', 20.00, 7.5),
 (13, 13, 'tech innovation', 45.00, 9.2);
- select * from keyword; ```
+ select * from keyword; 
 
 ## Performance
 ``` Sql
