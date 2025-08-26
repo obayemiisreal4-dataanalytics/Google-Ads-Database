@@ -81,7 +81,7 @@ VALUES
 describe advertiser;
 select * from advertiser; ```
 
-## campaign table
+### campaign table
 ``` Sql
 INSERT INTO Campaign (CampaignID, advitiserid, CampaignName, StartDate, Budget)
 VALUES
