@@ -62,7 +62,6 @@ The Entity Relationship Diagram shows the collection of objects within a databas
 
 ## Advertiser table
 
-```Sql
 INSERT INTO Advertiser (AdvertiserID, Advertisername, Contactperson, Contactemail, Phonenumber)
 VALUES
 (1, 'Simtech Creative', 'Chinwe Okoro', 'chimweokoro@gmail.com', '+234 (0)70 4735 0000'),
@@ -83,7 +82,6 @@ describe advertiser;
 select * from advertiser;
 
 ## campaign table
-``` Sql
 INSERT INTO Campaign (CampaignID, advitiserid, CampaignName, StartDate, Budget)
 VALUES
 (1, 1, 'Unwrap Holiday Joy', '2023-03-21', 800000),
@@ -103,7 +101,6 @@ VALUES
 describe campaign; 
 
 ## Ad table
-``` Sql
 INSERT INTO Ad (AdID, campaignid, AdTitle, TargetURL, Impressions)
 VALUES
 (1, 1, 'Unwrap Holiday Joy: Your Festive Shopping Guide', 'https://www.simtechcreative.com/holiday-gifts', 10000),
@@ -122,7 +119,6 @@ VALUES
 select * from ad; 
 
 ## Keyword table
-``` Sql
 INSERT INTO Keyword (KeywordID, ADid, KeywordText, BidAmount, QualityScore)
 VALUES
 (1, 1, 'holiday gifts', 30.00, 8.5),
@@ -141,7 +137,6 @@ VALUES
  select * from keyword; 
 
 ## Performance
-``` Sql
 INSERT INTO Performance (PerformanceID, adid, Date, Clicks, Conversations)
 VALUES
 (1, 1, '2023-11-01', 100, 5),
