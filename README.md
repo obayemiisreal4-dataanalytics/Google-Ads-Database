@@ -13,40 +13,51 @@ Entities are tables or real world objects that are meant to store information in
 
 # Advertiser
 This is the table that stores the advertisers' information. The attributes and data types are as follows:<br>
-AdvertiserID **INT**<br>
+AdvertiserID PK **INT**<br>
 AdvertiserName **VARCHAR**<br>
 ContactPerson **VARCHAR**<br>
 ContactEmail **VARCHAR**<br>
 
 ## Campaign
 This is the table that stores information from the campaigns. The attributes and data types are as follows:<br>
-CampaignID **INT**<br>
-AdvertiserID **INT**<br>
+CampaignID PK **INT**<br>
+AdvertiserID FK **INT**<br>
 CampaignName **VARCHAR**<br>
 StartDate **DATE**<br>
 
 ## Advertisement
 This is the table that stores information from the advertisement. The attributes and data types are as follows:<br>
-AdID **INT**<br>
-CampaignID **INT**<br>
+AdID PK **INT**<br>
+CampaignID FK **INT**<br>
 AdTitle **VARCHAR**<br>
 TargetURL **VARCHAR**<br>
 Impression **SMALLINT**<br>
 
 ## keyword
 This is the table that stores information from the keyword. The attributes and data types are as follows:<br>
-keywordid **INT**<br>
-adid **INT** <br>
+keywordid PK **INT**<br>
+adid **INT** FK <br>
 keywordtext **TEXT** <br>
 Bidamount **SNALLINT** <br>
 QualityScore **SMALLINT** <br>
 
 ## Performance
 This is the table that stores information from the Performance. The attributes and data types are as follows:<br>
-Performanceid **INT** <br>
-Adid **INT** <br>
+Performanceid PK **INT** <br>
+Adid FK **INT** <br>
 Date **DATE** <br>
 Clicks **SMALLINT** <br>
 Conversations **SMALLINT** <br>
+
+## The cardinality requirement for the Database
+Advertiser - Campaign: One advertiser can manage multiple campaigns, but each campaign belongs to a single advertiser (one-to-many).
+Campaign – Ad: One campaign can contain multiple ads, but each ad is linked to one campaign (one-to-many).
+Ad - Keyword: An ad can target multiple keywords, but each keyword is associated with one ad (one-to-many).
+Ad - Performance: One ad can generate multiple performance records over time, but each performance record belongs to a specific ad (one-to-many). 
+
+## Entity Relationship Diagram 
+The Entity Relationship Diagram shows the collection of objects within a database and the relationship between them. It includes the entities, Schemas, Participation constraints and the relationship between the entities, I modeled this using the ERD tools by defining the table and specifying the relationships between the tabbles using pre-existing columns as foreign keys.
+
+
 
 
