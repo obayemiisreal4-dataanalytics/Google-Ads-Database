@@ -143,7 +143,7 @@ VALUES
  select * from keyword;
  ``` 
 
-## Performance
+## Performance table
 ``` Sql
 INSERT INTO Performance (PerformanceID, adid, Date, Clicks, Conversations)
 VALUES
