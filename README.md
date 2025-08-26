@@ -82,7 +82,6 @@ describe advertiser;
 select * from advertiser; ```
 
 ## campaign table
-```Sql
 INSERT INTO Campaign (CampaignID, advitiserid, CampaignName, StartDate, Budget)
 VALUES
 (1, 1, 'Unwrap Holiday Joy', '2023-03-21', 800000),
@@ -99,7 +98,7 @@ VALUES
 (12, 12, 'Your Active Lifestyle, Elevated', '2025-02-12', 750000),
 (13, 13, 'Luxury Redefined', '2025-03-21', 1200000);
 
-describe campaign; ```
+describe campaign; 
 
 ## Ad table
 
