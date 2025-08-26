@@ -48,5 +48,5 @@ Adid **INT** <br>
 Date **DATE** <br>
 Clicks **SMALLINT** <br>
 Conversations **SMALLINT** <br>
-P
+
 
