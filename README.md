@@ -13,25 +13,25 @@ Entities are tables or real world objects that are meant to store information in
 
 # Advertiser
 This is the table that stores the advertisers' information. The attributes and data types are as follows:<br>
-AdvertiserID *INT*<br>
-AdvertiserName *VARCHAR*<br>
-ContactPerson *VARCHAR*<br>
-ContactEmail *VARCHAR*<br>
+AdvertiserID **INT**<br>
+AdvertiserName **VARCHAR**<br>
+ContactPerson **VARCHAR**<br>
+ContactEmail **VARCHAR**<br>
 
 ## Campaign
 This is the table that stores information from the campaigns. The attributes and data types are as follows:<br>
-CampaignID *INT*<br>
-AdvertiserID *INT*<br>
-CampaignName *VARCHAR*<br>
-StartDate *DATE*<br>
+CampaignID **INT**<br>
+AdvertiserID **INT**<br>
+CampaignName **VARCHAR**<br>
+StartDate **DATE**<br>
 
 ## Advertisement
 This is the table that stores information from the advertisement. The attributes and data types are as follows:<br>
-AdID *INT*<br>
-CampaignID 8*INT*<br>
-AdTitle *VARCHAR*<br>
-TargetURL *VARCHAR*<br>
-Impression *SMALLINT*<br>
+AdID **INT**<br>
+CampaignID **INT**<br>
+AdTitle **VARCHAR**<br>
+TargetURL **VARCHAR**<br>
+Impression **SMALLINT**<br>
 
 ## keyword
 This is the table that stores information from the keyword. The attributes and data types are as follows:<br>
