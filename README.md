@@ -176,7 +176,7 @@ ORDER BY total_conversations DESC, total_clicks DESC
 LIMIT 1;
 ```
 ## Results
-![Top performing advertisements](Screenshot 2025-08-27 113618.png)
+![Top performing advertisements](question1.png)
 
 INSIGHT: It can be observed above that Flash Sale Alert
 
