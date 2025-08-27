@@ -164,7 +164,7 @@ select * from performance;
  ```
 ## Queries supporting the business objectives
 
-## Top five performing advertisements
+## 1 Top five performing advertisements
 Firstly insert the performance table 
 Based on your table find the best performing advertisement show their adid,adtitle ,sum of clicks and sum of conversions
 ```Sql
@@ -178,10 +178,10 @@ LIMIT 1;
 ## Results
 ![Top performing advertisements](question1.png)
 
-INSIGHT: It can be observed above that Flash Sale Alert
+INSIGHT: It can be observed above that 'Flash Sale Alert:Limited Time Offers' had the highest conversion rate in terms of top performing advertisements (18), followed by 'Elevate Your Space: Home Decor Inspiration' (16) . It can also be gleamed that the top performing markets include fitness, consumer tech products, interior decor.
 
 
-## 2 
+## 2 Top performing Advertisers
 Find the top five performing advertisers and their contact emails show their advertiserid, advertisername,contactperson,contactemail,sum of conversions
 ``` Sql
 SELECT  advertiser.Advertiserid, advertiser.AdvertiserName,  advertiser.ContactPerson,  advertiser.ContactEmail,
@@ -193,7 +193,8 @@ ORDER BY total_conversions DESC
 LIMIT 5;
 ```
 ## Result
-![Top performing advertisers](question2.png)
+![Top performing advertisers](question2.png) 
+INSIGHTS: It can be observed that 
 
 ## 3
 Find the top five campaigns based on impressions
