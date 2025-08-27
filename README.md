@@ -205,6 +205,10 @@ select campaign.campaignid, campaign.campaignname, sum(ad.impressions) as total_
  group by campaign.campaignid, campaign.campaignname 
  order by total_impressions desc limit 5;
  ```
+## Result
+![Top campaigns based on Impressions](question3.png)
+
+
 
 
 
