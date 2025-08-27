@@ -162,6 +162,40 @@ VALUES
 (13, 13, '2023-11-13', 100, 9);
 select * from performance;
  ```
+## Questions
+## 1
+Firstly insert the performance table 
+Based on your table find the best performing advertisement show their adid,adtitle ,sum of clicks and sum of conversions
+```Sql
+SELECT ad.Adid, ad.Adtitle, SUM(performance.Clicks) AS total_clicks,
+    SUM(performance.Conversations) AS total_conversations
+FROM Ad JOIN Performance  ON ad.Adid = performance.Adid
+GROUP BY ad.Adid, ad.Adtitle
+ORDER BY total_conversations DESC, total_clicks DESC
+LIMIT 1;
+```
+## 2 
+Find the top five performing advertisers and their contact emails show their advertiserid, advertisername,contactperson,contactemail,sum of conversions
+``` Sql
+SELECT  advertiser.Advertiserid, advertiser.AdvertiserName,  advertiser.ContactPerson,  advertiser.ContactEmail,
+    SUM(performance.Conversations) AS total_conversions
+FROM Advertiser JOIN Campaign ON advertiser.Advertiserid = campaign.Advitiserid
+JOIN Ad  ON campaign.Campaignid = ad.Campaignid JOIN Performance ON ad.Adid = performance.Adid
+GROUP BY advertiser.Advertiserid, advertiser.AdvertiserName, advertiser.ContactPerson, advertiser.ContactEmail
+ORDER BY total_conversions DESC
+LIMIT 5;
+```
+## 3
+Find the top five campaigns based on impressions
+```Sql
+use mydb;
+select campaign.campaignid, campaign.campaignname, sum(ad.impressions) as total_impressions
+ from campaign join ad on campaign.campaignid = ad.campaignid 
+ group by campaign.campaignid, campaign.campaignname 
+ order by total_impressions desc limit 5;
+ ```
+
+
 
 
 
