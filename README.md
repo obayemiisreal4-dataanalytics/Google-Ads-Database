@@ -1,5 +1,5 @@
 # Google-Ads-Database
-Google is a multinational technology company offering online advertising services through the Google Ads platform. As a data analyst, you have been tasked with developing a comprehensive Relational Database Management System (RDBMS) to support Google Ads operations. The goal is to manage advertisers,campaigns,ads, keywords, and performance metrics.
+Google is a multinational technology company offering online advertising services through the Google Ads platform. As a data analyst, you have been tasked with developing a comprehensive Relational Database Management System (RDBMS) to support Google Ads operations. The goal is to manage advertisers,campaigns,ads, keywords, and performance metrics. 
 
 ## Objectives
 * Identifying the main entities in the database system.
@@ -162,8 +162,9 @@ VALUES
 (13, 13, '2023-11-13', 100, 9);
 select * from performance;
  ```
-## Questions
-## 1
+## Queries supporting the business objectives
+
+## Top five performing advertisements
 Firstly insert the performance table 
 Based on your table find the best performing advertisement show their adid,adtitle ,sum of clicks and sum of conversions
 ```Sql
@@ -174,6 +175,10 @@ GROUP BY ad.Adid, ad.Adtitle
 ORDER BY total_conversations DESC, total_clicks DESC
 LIMIT 1;
 ```
+## Results
+
+
+
 ## 2 
 Find the top five performing advertisers and their contact emails show their advertiserid, advertisername,contactperson,contactemail,sum of conversions
 ``` Sql
