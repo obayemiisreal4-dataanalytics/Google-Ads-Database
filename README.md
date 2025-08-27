@@ -165,8 +165,6 @@ select * from performance;
 ## Queries supporting the business objectives
 
 ## 1 Top five performing advertisements
-Firstly insert the performance table 
-Based on your table find the best performing advertisement show their adid,adtitle ,sum of clicks and sum of conversions
 ```Sql
 SELECT ad.Adid, ad.Adtitle, SUM(performance.Clicks) AS total_clicks,
     SUM(performance.Conversations) AS total_conversations
@@ -182,7 +180,6 @@ INSIGHT: It can be observed above that 'Flash Sale Alert:Limited Time Offers' ha
 
 
 ## 2 Top performing Advertisers
-Find the top five performing advertisers and their contact emails show their advertiserid, advertisername,contactperson,contactemail,sum of conversions
 ``` Sql
 SELECT  advertiser.Advertiserid, advertiser.AdvertiserName,  advertiser.ContactPerson,  advertiser.ContactEmail,
     SUM(performance.Conversations) AS total_conversions
@@ -194,10 +191,9 @@ LIMIT 5;
 ```
 ## Result
 ![Top performing advertisers](question2.png) 
-INSIGHTS: It can be observed that 
+INSIGHTS: It can be observed that 'Super star promotions limited' led the pack when it comes to top performing advertisers. 
 
 ## 3
-Find the top five campaigns based on impressions
 ```Sql
 use mydb;
 select campaign.campaignid, campaign.campaignname, sum(ad.impressions) as total_impressions
@@ -207,6 +203,7 @@ select campaign.campaignid, campaign.campaignname, sum(ad.impressions) as total_
  ```
 ## Result
 ![Top campaigns based on Impressions](question3.png)
+INSIGHTS: It can be observed that 'Elevate your space' has a total of 20000 Impressions which is the most impressions out of the pack
 
 
 
