@@ -191,6 +191,7 @@ LIMIT 5;
 ```
 ## Result
 ![Top performing advertisers](question2.png) 
+
 INSIGHTS: It can be observed that 'Super star promotions limited' led the pack when it comes to top performing advertisers. 
 
 ## 3 Top performing campaigns based on Impressions
@@ -203,6 +204,7 @@ select campaign.campaignid, campaign.campaignname, sum(ad.impressions) as total_
  ```
 ## Result
 ![Top campaigns based on Impressions](question3.png)
+
 INSIGHTS: It can be observed that 'Elevate your space' has a total of 20000 Impressions which is the most impressions out of the pack
 
 
