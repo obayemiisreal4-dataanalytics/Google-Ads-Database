@@ -193,7 +193,7 @@ ORDER BY total_conversions DESC
 LIMIT 5;
 ```
 ## Result
-[Top performing advertisers](question2.png)
+![Top performing advertisers](question2.png)
 
 ## 3
 Find the top five campaigns based on impressions
