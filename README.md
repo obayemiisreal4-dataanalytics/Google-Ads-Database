@@ -193,7 +193,7 @@ LIMIT 5;
 ![Top performing advertisers](question2.png) 
 INSIGHTS: It can be observed that 'Super star promotions limited' led the pack when it comes to top performing advertisers. 
 
-## 3
+## 3 Top performing campaigns based on Impressions
 ```Sql
 use mydb;
 select campaign.campaignid, campaign.campaignname, sum(ad.impressions) as total_impressions
