@@ -176,7 +176,9 @@ ORDER BY total_conversations DESC, total_clicks DESC
 LIMIT 1;
 ```
 ## Results
+![Top performing advertisements](Top five best performing advertisements.png)
 
+INSIGHT: It can be observed above that Flash Sale Alert
 
 
 ## 2 
