@@ -202,7 +202,7 @@ select campaign.campaignid, campaign.campaignname, sum(ad.impressions) as total_
  group by campaign.campaignid, campaign.campaignname 
  order by total_impressions desc limit 5;
  ```
-## Result
+## Result 
 ![Top campaigns based on Impressions](question3.png)
 
 INSIGHTS: It can be observed that 'Elevate your space' has a total of 20000 Impressions which is the most impressions out of the pack.
